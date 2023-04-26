@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Product data
   try {
     const tagData = await Tag.findAll();
+    // include: [{ model: Product, through: , as: '' }]
     res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
@@ -19,7 +20,6 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Product data
   try {
     const tagData = await Tag.findByPk(req.params.id, {
-      // JOIN with locations, using the Trip through table
       include: [{ model: Product, through: , as: '' }]
     });
 
