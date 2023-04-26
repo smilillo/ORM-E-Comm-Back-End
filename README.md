@@ -3,7 +3,7 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Project Description 
-This project replicates the back end of an e-commerce application. The application utilizes Sequelize to allow interaction with a MySQL database. This allows the user to view the contents of the database, add new content, update content, as well as delete content as they see fit. 
+This project replicates the back end of an e-commerce application. The application utilizes Sequelize to allow interaction with a MySQL database. The user is able to view the contents of the database, add new content, update content, as well as delete content as they see fit. 
   
 ## Table of Contents
 - [Installation](#installation)
