@@ -93,7 +93,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', (req, res) => {
   Product.destroy({
       where: {
         id: req.params.id
